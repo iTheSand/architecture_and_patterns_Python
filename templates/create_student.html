@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}
+Создание студента
+{% endblock %}
+{% block style %}
+	{% include "inc-style.html" %}
+{% endblock %}
+{% block menu %}
+	{% include "inc-menu.html" %}
+{% endblock %}
+{% block body %}
+	<div class="container">
+		<div>
+			<div>
+                <a href="/student-list/">Назад</a>
+            </div>
+            <br>
+            <br>
+			<div>
+				<a href="/add-student/">Добавить студента на курс</a>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div>
+			<h1>Создание студента</h1>
+			<br>
+			<br>
+			<form method="post">
+				<input type="text" name="name" placeholder="Имя">
+				<button type="submit">Сохранить</button>
+			</form>
+		</div>
+	</div>
+{% endblock %}
+{% block footer %}
+	{% include "inc-footer.html" %}
+{% endblock %}
